@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+    <div class="gloom-layer" id="gloomLayer"></div>
+    <div class="particle-layer" id="sparkleLayer" aria-hidden="true"></div>
+    <div class="particle-layer" id="petalLayer" aria-hidden="true"></div>
+
+    <main class="page">
+      <section class="hero card">
+        <p class="tag">Propose Day</p>
+        <h1>Will you be my Valentine?</h1>
+        <p class="subhead">One simple question. One enormous feeling.</p>
+      </section>
+
+      <section class="reasons card" aria-labelledby="reasons-title">
+        <h2 id="reasons-title">Why I love you</h2>
+        <div class="reason-grid">
+          <article class="reason">
+            <h3>Beautiful</h3>
+            <p>I love how beautiful you look. You light up every place you walk into.</p>
+          </article>
+          <article class="reason">
+            <h3>Hot</h3>
+            <p>I love how hot you look. You are effortlessly stunning.</p>
+          </article>
+          <article class="reason">
+            <h3>Smart</h3>
+            <p>I love how smart you are. Your mind makes me admire you more every day.</p>
+          </article>
+          <article class="reason">
+            <h3>Caring</h3>
+            <p>I love how deeply you care about me, even in little moments.</p>
+          </article>
+          <article class="reason">
+            <h3>Safe</h3>
+            <p>I love how safe and calm you feel with me. That trust means everything.</p>
+          </article>
+          <article class="reason">
+            <h3>Expressive</h3>
+            <p>I love how expressive you are with me. Every feeling with you feels real.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proposal card" aria-labelledby="proposal-title">
+        <h2 id="proposal-title">Please be my Valentine</h2>
+        <p class="hint">Hover on <strong>Yes</strong> for the divine moment. Try <strong>No</strong> if you dare.</p>
+
+        <div class="decision-stage" id="decisionStage">
+          <button class="btn yes" id="yesBtn" type="button">Yes</button>
+          <button class="btn no" id="noBtn" type="button" aria-label="No (good luck catching this)">No</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="accepted hidden" id="acceptedPanel" aria-live="polite">
+      <div class="accepted-card">
+        <p class="tag">Locked In</p>
+        <h2>Best answer in the universe: YES.</h2>
+        <p>You and me. Same side. Same story. Same sky.</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
