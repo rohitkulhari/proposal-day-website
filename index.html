@@ -12,6 +12,8 @@
   <body>
     <div class="ambient"></div>
     <div class="gloom-layer" id="gloomLayer"></div>
+    <div class="flash-layer" id="flashLayer"></div>
+    <div class="shock-layer" id="shockLayer"></div>
     <div class="particle-layer" id="sparkleLayer" aria-hidden="true"></div>
     <div class="particle-layer" id="petalLayer" aria-hidden="true"></div>
 
@@ -22,36 +24,6 @@
         <p class="subhead">One simple question. One enormous feeling.</p>
       </section>
 
-      <section class="reasons card" aria-labelledby="reasons-title">
-        <h2 id="reasons-title">Why I love you</h2>
-        <div class="reason-grid">
-          <article class="reason">
-            <h3>Beautiful</h3>
-            <p>I love how beautiful you look. You light up every place you walk into.</p>
-          </article>
-          <article class="reason">
-            <h3>Hot</h3>
-            <p>I love how hot you look. You are effortlessly stunning.</p>
-          </article>
-          <article class="reason">
-            <h3>Smart</h3>
-            <p>I love how smart you are. Your mind makes me admire you more every day.</p>
-          </article>
-          <article class="reason">
-            <h3>Caring</h3>
-            <p>I love how deeply you care about me, even in little moments.</p>
-          </article>
-          <article class="reason">
-            <h3>Safe</h3>
-            <p>I love how safe and calm you feel with me. That trust means everything.</p>
-          </article>
-          <article class="reason">
-            <h3>Expressive</h3>
-            <p>I love how expressive you are with me. Every feeling with you feels real.</p>
-          </article>
-        </div>
-      </section>
-
       <section class="proposal card" aria-labelledby="proposal-title">
         <h2 id="proposal-title">Please be my Valentine</h2>
         <p class="hint">Hover on <strong>Yes</strong> for the divine moment. Try <strong>No</strong> if you dare.</p>
@@ -59,6 +31,10 @@
         <div class="decision-stage" id="decisionStage">
           <button class="btn yes" id="yesBtn" type="button">Yes</button>
           <button class="btn no" id="noBtn" type="button" aria-label="No (good luck catching this)">No</button>
+        </div>
+        <div class="nope-panel hidden" id="nopePanel" aria-live="polite">
+          <h3 id="nopeTitle">No, why?</h3>
+          <p id="nopeLine"></p>
         </div>
       </section>
     </main>
